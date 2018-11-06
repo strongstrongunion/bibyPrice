@@ -6,6 +6,8 @@
         <i-input value="{{ search }}" placeholder="请输入收货人姓名" />
     </i-panel>
     <i-button bind:click="handleClick" type="primary">Primary</i-button>
+    1、打开购物APP（如淘宝、京东），打开您想查询的宝贝，右上角分享->复制商品链接
+    2、打开比比价小程序，粘贴链接到输入框，点击查询即可。
   </view>
 </template>
 
@@ -15,9 +17,9 @@
   export default class Search extends wepy.page {
     config = {
       navigationBarTitleText: 'search page',
-      'usingComponents': {
-        'i-input': '../components/input/index',
-        'i-button': '../components/button/index'
+      usingComponents: {
+        'i-input': '../iview/input/index',
+        'i-button': '../iview/button/index'
       }
     }
 
@@ -29,7 +31,9 @@
     }
 
     methods = {
-
+      handleClick() {
+        wx.navigateTo('detail');
+      }
     }
   }
 </script>
