@@ -1,0 +1,15 @@
+{
+	"description": "A WePY project",
+	"setting": {
+		"urlCheck": true,
+		"es6": false,
+		"postcss": false,
+		"minified": false,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"appid": "wx67f25274dd293a44",
+	"projectname": "biby-price",
+	"miniprogramRoot": "dist/",
+	"condition": {}
+}

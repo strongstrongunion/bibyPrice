@@ -1,0 +1,35 @@
+<style lang="less">
+</style>
+<template>
+  <view class="container">
+    <i-panel title="无标题输入框">
+        <i-input value="{{ search }}" placeholder="请输入收货人姓名" />
+    </i-panel>
+    <i-button bind:click="handleClick" type="primary">Primary</i-button>
+  </view>
+</template>
+
+<script>
+  import wepy from 'wepy'
+
+  export default class Search extends wepy.page {
+    config = {
+      navigationBarTitleText: 'search page',
+      'usingComponents': {
+        'i-input': '../components/input/index',
+        'i-button': '../components/button/index'
+      }
+    }
+
+    data = {
+      search: ''
+    }
+
+    computed = {
+    }
+
+    methods = {
+
+    }
+  }
+</script>
